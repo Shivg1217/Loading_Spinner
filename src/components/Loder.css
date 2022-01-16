@@ -1,0 +1,26 @@
+#spinner-back, #spinner-front {
+    position: fixed;
+    width: 100vw;
+    transition: all 1s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  #spinner-back {
+    z-index: 998;
+    height: 100vh;
+    background: url(../images/lobby_bg.png);
+  }
+  #spinner-front {
+    z-index: 999;
+    color: #fff;
+    text-align: center;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+  }
+  #spinner-front img{
+    width: 153px;
+  }
+  #spinner-back.show, #spinner-front.show {
+    visibility: visible;
+    opacity: 1;
+  }
